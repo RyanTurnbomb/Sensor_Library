@@ -7,7 +7,10 @@ Library for implementing the IR sensors using the ADC10 subsystem on the MSP430.
   - Takes readings on P1.3 coming from the left IR sensor 
     
 - `void getRight`
-  - Takes readings on P1.4 coming from the left IR sensor
+  - Takes readings on P1.4 coming from the right IR sensor
+
+- `void getCenter`
+  - Takes readings on P1.5 coming from the center IR sensor
 
 ## Notes
 - Clears the ENC bit before taking a sensor reading
