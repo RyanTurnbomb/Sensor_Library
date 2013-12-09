@@ -1,4 +1,4 @@
-Sensor Library
+#Sensor Library
 Library for implementing the IR sensors using the ADC10 subsystem on the MSP430.
 
 
