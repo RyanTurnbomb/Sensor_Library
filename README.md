@@ -1,2 +1,16 @@
-Sensor_Library
-==============
+Sensor Library
+Library for implementing the IR sensors using the ADC10 subsystem on the MSP430.
+
+
+##Functions
+- `void getLeft`
+  - Takes readings on P1.3 coming from the left IR sensor 
+    
+- `void getRight`
+  - Takes readings on P1.4 coming from the left IR sensor
+
+## Notes
+- Clears the ENC bit before taking a sensor reading
+  - `ADC10CTL0 &= ~ENC`
+- Clears the INCHx bits before reading as well
+  - `ADC10CTL1 &= ~(INCH3|INCH2|INCH1|INCH0);`
