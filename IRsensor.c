@@ -17,14 +17,15 @@ unsigned int getLeft() {
 	return ADC10MEM;
 }
 
-/*unsigned int getCenter() {
+unsigned int getCenter() {
 	ADC10CTL0 &= ~ENC;
+	ADC10CTL1 &= ~(INCH3|INCH2|INCH1|INCH0);
 	ADC10CTL1 |= INCH_5;
 	ADC10CTL0 |= ENC + ADC10SC;
 	__bis_SR_register(CPUOFF + GIE);
 
 	return ADC10MEM;
-}*/
+}
 
 unsigned int getRight() {
 	ADC10CTL0 &= ~ENC;
