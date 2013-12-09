@@ -8,12 +8,10 @@
 #ifndef IRSENSOR_H_
 #define IRSENSOR_H_
 
-void initLEDs();
-
-void initADC10();
-
 unsigned int getLeft();
 
 unsigned int getRight();
+
+unsigned int getCenter();
 
 #endif /* IRSENSOR_H_ */
